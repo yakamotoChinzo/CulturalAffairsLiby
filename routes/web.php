@@ -1,4 +1,6 @@
 <?php
+use App\Post;
+use App\Categorie;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,16 @@
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/create', function () {
+  $cat = Categorie::create(['label'=>"Title 1"]);
+  $cat1 = Categorie::create(['label'=>"Title 2"]);
+  $cat2 = Categorie::create(['label'=>"Title 3"]);
+  $cat = Categorie::findOrFail(1);
+  $cat1 = Categorie::findOrFail(2);
+    // $post = Post::create(['title'=>'My first dikchi chi haja', 'description'=>'What is the fuck']);
+  $cat->categories()->save($cat1);
 });
 
 Auth::routes();

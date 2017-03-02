@@ -9,6 +9,10 @@ class Categorie extends Model
     protected $fillable = ['label', 'description'];
 
     public function posts(){
-      $this->hasMany('App/Post');
+      return $this->hasMany('App\Post');
+    }
+
+    public function categories(){
+      return $this->hasMany('App\Categorie');
     }
 }
