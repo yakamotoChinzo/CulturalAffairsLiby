@@ -27,6 +27,9 @@ Route::get('/create', function () {
   $cat->categories()->save($cat1);
 });
 
+Route::resource('/posts', 'PostController');
+Route::resource('/categories', 'CategorieController');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
