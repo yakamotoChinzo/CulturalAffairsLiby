@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container">
-
+      <div class="card-panel teal lighten-2">
     <div class="card-panel teal lighten-2">
       <h5 class="center-align">Veuillez introduire les informations de cette catégorie :</h5>
     </div>
