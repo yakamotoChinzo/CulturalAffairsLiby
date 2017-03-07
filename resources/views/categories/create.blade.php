@@ -16,6 +16,7 @@
     <div class="card-panel teal lighten-2">
       <h5 class="center-align">Veuillez introduire les informations de cette catégorie :</h5>
     </div>
+    <!--- Content -->
     <form action="{{route('categories.index')}}" method="post">
       <input type="text" name="label" placeholder="Enter a Label">
       <input type="text" name="description" placeholder="Enter a description">
@@ -23,5 +24,7 @@
       {{csrf_field()}}
     </form>
   </div>
+  <div class="card-panel hoverable"> Hoverable Card Panel</div>
+
   </body>
 </html>
