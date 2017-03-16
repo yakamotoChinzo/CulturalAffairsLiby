@@ -14,7 +14,7 @@ use App\Categorie;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/create', function () {
